@@ -1,0 +1,164 @@
+
+.box {
+    position: relative;
+    margin: 0 auto;
+    width: 535px;
+}
+.box h2 {
+    padding: 50px 0;
+    font-size: 40px;
+    text-align: center;
+}
+.box .ipt {
+    margin-bottom: 40px;
+    width: 535px;
+    font-size: 20px;
+    overflow: hidden;
+}
+.box .ipt span {
+    float: left;
+    width: 225px;
+    line-height: 37px;
+    text-align: center;
+}
+.box .ipt input {
+    float: right;
+    width: 250px;
+    height: 37px;
+    border: 1px solid rgba(187, 187, 187, 100);
+}
+.box .ipt2 {
+    margin: 0 auto 30px;
+    width: 415px;
+}
+.box .ipt2 p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 25px;
+}
+.box .ipt2 input {
+    width: 415px;
+    height: 37px;
+    border: 1px solid rgba(187, 187, 187, 100);
+}
+.box .login {
+    position: relative;
+    margin: 0 auto 60px;
+    width: 85px;
+    height: 35px;
+}
+.box .login2 {
+    margin: 50px auto 0;
+    width: 85px;
+    height: 35px;
+}
+.box .login::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 3px;
+    background: #000;
+}
+.box .login button {
+    width: 85px;
+    height: 35px;
+    border-radius: 4px;
+    color: rgba(16, 16, 16, 100);
+    font-size: 18px;
+    font-family: Roboto;
+    border: 1px solid rgba(187, 187, 187, 100);   
+    cursor: pointer;
+}
+.box .login2 button {
+    width: 85px;
+    height: 35px;
+    border-radius: 4px;
+    color: rgba(16, 16, 16, 100);
+    font-size: 18px;
+    font-family: Roboto;
+    border: 1px solid rgba(187, 187, 187, 100);   
+    cursor: pointer;
+}
+.box button:hover {
+    transition: all .3s;
+    background: #fff;
+}
+.box .tip {
+    display: flex;
+    justify-content: space-between;
+}
+.box .tip a {
+    color: #000;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.box .user {
+    padding-top: 20px;
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .user .pic {
+    margin-right: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: rgba(16, 16, 16, 100);
+    font-size: 20px;
+    line-height: 100px;
+    text-align: center;
+    font-family: Roboto;
+    border: 1px solid rgba(187, 187, 187, 100);
+    background: #fff;
+    box-sizing: border-box;
+}
+.box .user p {
+    font-size: 30px;
+    font-weight: 600;
+}
+.box .user p span {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.box .ipt3 {
+    margin: 0 auto 35px;
+    width: 500px;
+    overflow: hidden;
+}
+.box .ipt3 span {
+    float: left;
+    margin-right: 25px;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+}
+.box .ipt3 input {
+    float: right;
+    padding-left: 15px;
+    width: 260px;
+    height: 30px;
+    border: 1px solid rgba(187, 187, 187, 100);
+}
+.box  .psw {
+    position: absolute;
+    bottom: 0;
+    right: -80px;
+    width: 80px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: rgba(164, 173, 179, 100);
+    color: rgba(255, 255, 255, 100);
+    font-size: 15px;
+    cursor: pointer;
+}
+.box  .psw:hover {
+    color: #000;
+}
