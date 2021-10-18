@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1044230",
+      "name": "门窗 门窗五金安装",
+      "font_class": "menchuangmenchuangwujinanzhuang",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "3846008",
+      "name": "烤箱-f",
+      "font_class": "kaoxiang-f",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "6528445",
+      "name": "电视",
+      "font_class": "dianshi",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "7023752",
+      "name": "空调",
+      "font_class": "kongtiao",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "18164107",
+      "name": "电灯,电灯,发光,光,灯泡,想法",
+      "font_class": "bulb-full",
+      "unicode": "e856",
+      "unicode_decimal": 59478
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logged</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header w">
+        <h1>Smart Home Control Centre</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About us</a>
+            <span>Welcome Back,<a href="#">George</a></span>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="main-l">
+            <h2>George's Home</h2>
+            <div class="mainl-bottom">
+                <div class="mainl-l">
+                    <div class="box">
+                        <h3>Energy Consumption</h3>
+                        <i>32Kw</i>
+                    </div>
+                    <div class="box">
+                        <h3>Energy Saving</h3>
+                        <i>8.6Kw</i>
+                    </div>
+                </div>
+                <div class="mainl-r">
+                    <div class="row">
+                        <a href="#">Appliances in Working</a>
+                    </div>
+                    <div class="row">
+                        <a href="#">Living Room <i class="icon"></i></a>
+                        <div class="hidden">
+                            Air-confitioner
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Dining Room <i class="icon"></i></a>
+                        <div class="hidden">
+                            Light
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Kitchen <i class="icon"></i></a>
+                        <div class="hidden">
+                            Microwave
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a href="#">Bathroom <i class="icon"></i></a>
+                        <div class="hidden">
+                            Light
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-r">
+            <a href="kitchen.html"></a>
+            <a href="balcony.html"></a>
+            <a href="bedroom-1.html"></a>
+            <a href="cloakroom.html"></a>
+            <a href="bedroom-2.html"></a>
+            <a href="bathroom.html"></a>
+            <a href="study.html"></a>
+            <a href="diningroom.html"></a>
+            <a href="livingroom.html"></a>
+            <img src="images/pic1.png" alt="">
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="box">
+            <i class="icon"></i>
+            <p>Label 1</p>
+        </div>
+        <div class="box">
+            <i class="icon"></i>
+            <p>Label 2</p>
+        </div>
+        <div class="box">
+            <i class="icon"></i>
+            <p>Label 3</p>
+        </div>
+        <div class="box">
+            <i class="icon"></i>
+            <p>Label 4</p>
+        </div>
+        <div class="box">
+            <i class="icon"></i>
+            <p>Label 5</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $('.mainl-r .hidden').hide();
+        $('.mainl-r .row a').click(function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $(this).siblings('.hidden').hide(100);
+
+            }else {
+                
+                $(this).addClass('active');
+                $(this).siblings('.hidden').show(100);
+            }
+
+        })
+    </script>
+</body>
+
+</html>
