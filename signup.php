@@ -3,23 +3,25 @@ header("Content-Type: text/html; charset=utf8");
 
 if(!isset($_POST['submit'])){
     exit("Wrong Executive");
-}//判断是否有submit操作
+}//check the execitove of submit
 
-$name=$_POST['name'];//post获取表单里的name
-$password=$_POST['password'];//post获取表单里的password
+$name=$_POST['name'];//post: to get the name
+$password=$_POST['password'];//post: to get the password
 
-include('connect.php');//链接数据库
-$q="insert into user(username,password) values ('$name','$password')";//向数据库插入表单传来的值的sql
-$reslut=mysqli_query($con,$q);//执行sql
+include('connect.php');//connect to database
+$q="insert into user(username,password) values ('$name','$password')";//insert value to sql
+$reslut=mysqli_query($con,$q);//execute sql
 
 if (!$reslut){
-    die('Error: ' . mysqli_error());//如果sql执行失败输出错误
+    die('Error: ' . mysqli_error());//failed executation
 }else{
-    echo "Register Successful";//成功输出注册成功
+    echo "Register Successful";//register successful
+    echo "<script>
+                            setTimeout(function(){window.location.href='login.html';},1500);
+                    </script>";
 }
 
-mysqli_close($con);//关闭数据库
+mysqli_close($con);//clese database
 
 ?>
-————————————————
 
